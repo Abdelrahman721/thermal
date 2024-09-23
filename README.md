@@ -59,3 +59,8 @@
 ## Files:
 - test.py: simple script that connect to the thermal sensor and collects the raw data.
 - visualize.py: processes the raw data obtained from the sensor and creates a thermal image.
+
+## Useful Links:
+- https://docs.circuitpython.org/projects/mlx90640/en/latest/api.html
+- https://github.com/adafruit/Adafruit_CircuitPython_MLX90640
+- https://how2electronics.com/thermal-fever-detector-with-mlx90640-opencv-raspberry-pi/
