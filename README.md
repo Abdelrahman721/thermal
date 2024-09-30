@@ -64,3 +64,5 @@
 - https://docs.circuitpython.org/projects/mlx90640/en/latest/api.html
 - https://github.com/adafruit/Adafruit_CircuitPython_MLX90640
 - https://how2electronics.com/thermal-fever-detector-with-mlx90640-opencv-raspberry-pi/
+- https://cdn-learn.adafruit.com/downloads/pdf/adafruit-mlx90640-ir-thermal-camera.pdf
+- 
