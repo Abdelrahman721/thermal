@@ -2,6 +2,7 @@ import time
 import board
 import busio
 import adafruit_mlx90640
+import numpy as np
 
 i2c = busio.I2C(board.SCL, board.SDA, frequency=800000)
 
@@ -15,8 +16,10 @@ mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_8_HZ
 frame = [0] * 768
 while True:
     try:
-        mlx.getFrame(frame)
+        mlx.getFrame(frame, 0.95, 8)
     except ValueError:
         print("ERROR retrieving the frame ...")
         continue
-    print(frame)
+    print(np.reshape(frame, (24,32)))
+    break
+    # print(np.max(frame), np.min(frame))
